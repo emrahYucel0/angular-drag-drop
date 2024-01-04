@@ -1,0 +1,27 @@
+<nav
+  class="navbar navbar-expand-sm navbar-light bg-light"
+>
+  <div class="container">
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link"  [routerLink]="['/']" (click)="onHome()">Home Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/drop']" (click)="onSubmit()">Drop Photo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/dragball']" (click)="onSubmit2()">Drag Ball</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/draganddrop']" (click)="onSubmit3()">Drag And Drop Box </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<router-outlet></router-outlet>

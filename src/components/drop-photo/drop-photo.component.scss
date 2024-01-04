@@ -1,0 +1,19 @@
+
+.drop-zone {
+    width: 300px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    line-height: 150px;
+    cursor: pointer;
+  }
+  
+  .image-container {
+    margin-top: 10px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 200px;
+  }
+  

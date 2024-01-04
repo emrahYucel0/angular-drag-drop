@@ -1,0 +1,12 @@
+<div
+  class="drop-zone"
+  (dragover)="onDragOver($event)"
+  (dragleave)="onDragLeave($event)"
+  (drop)="onDrop($event)"
+>
+  Sürükleyip Bırakın 
+</div>
+
+<div *ngFor="let image of images" class="image-container">
+  <img [src]="image" alt="Sürüklenen Resim" />
+</div>

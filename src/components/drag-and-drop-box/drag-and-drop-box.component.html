@@ -1,0 +1,18 @@
+
+<div class="position-relative back">
+  <div class="box" id="boxA" (drop)="drop($event)" (dragover)="allowDrop($event)">
+    <div class="box" id="box1" draggable="true"  (dragstart)="drag($event)"></div>
+    <div class="box" id="box2" draggable="true"  (dragstart)="drag($event)"></div>
+    <div class="box" id="box3" draggable="true"  (dragstart)="drag($event)"></div>
+  </div>
+  
+  <div class="container" (drop)="drop($event)" (dragover)="allowDrop($event)">
+    <div class="item "></div>
+    <div class="item "></div>
+    <div class="item "></div>
+    <div class="item "></div>
+  </div>
+  
+  <div class="box" id="boxB" (drop)="drop($event)" (dragover)="allowDrop($event)">
+    <div class="box" id="box4" draggable="true"  (dragstart)="drag($event)"></div></div>
+</div>
