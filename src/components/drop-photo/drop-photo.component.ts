@@ -16,17 +16,15 @@ export class DropPhotoComponent implements OnInit{
   
     onDragOver(event: DragEvent): void {
       event.preventDefault();
-      this.highlightDropZone();
     }
   
     onDragLeave(event: DragEvent): void {
       event.preventDefault();
-      this.unhighlightDropZone();
     }
   
     onDrop(event: DragEvent): void {
       event.preventDefault();
-      this.unhighlightDropZone();
+      
   
       const files = event.dataTransfer?.files;
       if (files && files.length > 0) {
@@ -34,13 +32,7 @@ export class DropPhotoComponent implements OnInit{
       }
     }
   
-    private highlightDropZone(): void {
-      // Drop zone highlight logic
-    }
-  
-    private unhighlightDropZone(): void {
-      // Drop zone unhighlight logic
-    }
+
   
     private handleFile(file: File): void {
       const reader = new FileReader();
